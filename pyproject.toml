@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "github-stats-cli"
+version = "0.1.0"
+description = "A beautiful CLI for GitHub profile statistics"
+requires-python = ">=3.8"
+dependencies = [
+    "PyGithub>=2.1.1",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+github-stats = "github_stats.cli:main"
