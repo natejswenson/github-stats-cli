@@ -61,8 +61,7 @@ This repo uses GitHub Actions (`.github/workflows/ci.yml`):
 - Tests run on Python 3.9, 3.10, 3.11, 3.12
 - Lint (Ruff) and Security checks are required
 - Pushes to `develop` auto-merge to `main` if all checks pass
-
-See `REPO_SETUP_SPEC.md` for branch protection details.
+- Branch protection on `main` and `develop` requires status checks to pass
 
 ## Quick Reference
 
