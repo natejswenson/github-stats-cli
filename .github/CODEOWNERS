@@ -1,0 +1,18 @@
+# CODEOWNERS - Define code ownership for pull request reviews
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owners for everything in the repo
+* @natejswenson
+
+# Core application
+/github_stats/ @natejswenson
+
+# Metrics modules
+/github_stats/metrics/ @natejswenson
+
+# Configuration and build
+pyproject.toml @natejswenson
+requirements.txt @natejswenson
+
+# Documentation
+*.md @natejswenson

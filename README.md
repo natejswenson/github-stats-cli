@@ -182,30 +182,3 @@ pip install -e .
 # Run tests (when implemented)
 pytest
 ```
-
-### Code Style
-
-- Clean, simple, and easy to understand
-- Type hints for clarity
-- Comprehensive error handling
-- Modular design with separation of concerns
-
-## Contributing
-
-Contributions are welcome! Please ensure:
-
-- Code is clean and well-documented
-- Each metric is in its own file
-- Error handling is graceful
-- Tests are included for new features
-
-## License
-
-This project is open source and available for educational and personal use.
-
-## Credits
-
-Built with:
-- [PyGithub](https://github.com/PyGithub/PyGithub) - GitHub API wrapper
-- [Rich](https://github.com/Textualize/rich) - Beautiful terminal formatting
-- [python-dotenv](https://github.com/theskumar/python-dotenv) - Environment variable management
