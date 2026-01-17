@@ -206,6 +206,13 @@ jobs:
   # ===========================================================================
   # Automerge Job - Auto-merge develop to main when all checks pass
   # ===========================================================================
+  # NOTE: Requires a Personal Access Token (PAT) with 'repo' scope stored as
+  # a repository secret named 'PAT_TOKEN'. To set up:
+  #   1. Go to GitHub Settings > Developer settings > Personal access tokens
+  #   2. Generate a token with 'repo' scope
+  #   3. Add it as a repository secret: Settings > Secrets > Actions > New secret
+  #      Name: PAT_TOKEN, Value: <your token>
+  # ===========================================================================
   automerge:
     name: Auto-merge to main
     runs-on: ubuntu-latest
@@ -222,7 +229,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Configure Git
         run: |
